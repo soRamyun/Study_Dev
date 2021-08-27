@@ -473,6 +473,65 @@ else
 }
 ```
 
+#### 4.2 Switch-Case
+
+```C
+int a = 0;
+switch(a){
+    case 1:
+        printf("a값은 1입니다.\n");
+		break;
+	case 2:
+        printf("a값은 1입니다.\n");
+        break;
+	default:
+        printf("a는 1과2 둘 다 아닙니다.\n");
+        break;
+}
+```
+
+- Switch문을 if문으로 대체할 수 있다. 
+
+```C
+int a = 0;
+
+if(a == 1)
+{
+	printf("a값은 1입니다.\n");    
+}
+else if(a == 2)
+{
+    printf("a값은 2입니다.\n");  
+}
+else
+{
+    printf("a는 1과2 둘 다 아닙니다.\n");
+}
+```
+
+- Switch문은 if문과 다르게 <=, >=, <. > 등 비교행위는 할 수 없다. 즉, Switch을 if문으로 바꿀 수 없는 경우가 있다.
+- Switch-Case문에서 각 case안에 break가 없을 시 만족하는 case문 아래 모든 case를 전부 돌게 된다.
+
+```C
+int a = 1;
+switch(a){
+    case 1:
+        printf("a값은 1입니다.\n");
+	case 2:
+        printf("a값은 2입니다.\n");
+	default:
+        printf("a는 1과2 둘 다 아닙니다.\n");
+}
+```
+
+```
+a값은 1입니다.
+a값은 2입니다.
+a는 1과2 둘 다 아닙니다.
+```
+
+
+
 #### 4.3 종합 예제
 
 ##### 4.3.1 비트마스크를 사용하여 방의 불이 켜져있는 지 확인
@@ -542,6 +601,12 @@ void main()
 
 - 불을 키는 경우
   - `light = light | AA`를 하면 0000 1111으로 변화가 없다. 이때 `if ((light & AA) != 0)`를 하면 0000 1111  & 0000 0001 = 0000 0001로 0과 같기 때문에 if문을 만족하여 불이 켜져있다고 화면에 출력하게 된다.
+
+## 5. 반복문
+
+#### 4.1 for문
+
+
 
 ## 참고사이트
 
