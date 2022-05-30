@@ -144,3 +144,5 @@ int main(void)
 [뮤텍스(Mutex)와 세마포어(Semaphore)의 차이](https://worthpreading.tistory.com/90)
 
 [오제이튜브](https://www.youtube.com/watch?v=GLMNFOCiGSU&list=PLz--ENLG_8TMdMJIwyqDIpcEOysvNoonf&index=23)
+
+[c++ 쓰레드](https://nowonbun.tistory.com/732)
